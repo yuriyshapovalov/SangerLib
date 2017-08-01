@@ -1,0 +1,2 @@
+# SangerLib
+Bioinformatics library

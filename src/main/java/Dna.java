@@ -55,4 +55,20 @@ public class Dna {
 		return sb.toString();
 	}
 
+	public String getReverseComplement() {
+		StringBuilder sb = new StringBuilder();
+		for(char c : sequence.toCharArray()) {
+			sb.append(getComplement(c));
+		}
+		return sb.reverse().toString();
+	}
+
+	private char getComplement(char c) {
+		if(c == 'A') return 'T';
+		if(c == 'T') return 'A';
+		if(c == 'G') return 'C';
+		if(c == 'C') return 'G';
+		return ' ';
+	}
+
 }

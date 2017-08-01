@@ -10,7 +10,7 @@ import main.java.Dna;
 public class TranscribingDNAintoRNA {
 
 	@Test
-	public void test() {
+	public void ShouldReturnTranscribedRnaFromDna() {
 		Dna dna = new Dna("GATGGAACTTGACTACGTAAATT");
 		String rna = dna.transcribeToRna();
 		

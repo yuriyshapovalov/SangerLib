@@ -46,4 +46,13 @@ public class Dna {
 		return counter;
 	}
 
+	public String transcribeToRna() {
+		StringBuilder sb = new StringBuilder(sequence);
+		for(int i = 0; i < sb.length(); i++) {
+			if(sb.charAt(i) == 'T')
+				sb.setCharAt(i, 'U');
+		}
+		return sb.toString();
+	}
+
 }
